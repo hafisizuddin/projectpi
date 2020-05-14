@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: white;
+  font-style:"color=white";
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: black;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 30%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+</style>
+<script type='text/javascript'> 
+function print_current_class()
+{
+window.print();
+}
+
+
+ 
+
+</script> 
+</head>
+<body onload="window.alert('Page successfully loaded');">
+
+<div class="header">
+  <h1>Mohamad Hafis Izuddin</h1>
+  <p>My Lifestyle</p>
+</div>
+<p id="demo"></p>
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+<div class="topnav">
+  <a href="homepi.html">Home</a>
+  <a href="favourite.html">Favourite</a>
+  <a href="education.html">Education</a>
+  <a href="contact.html">Contact</a>
+  <a href="form.html" style="float:right">Feedback</a>
+</div>
+
+<center>
+      <h2>My Contact</h2>
+	  <p>Name: MOHAMAD HAFIS IZUDDIN BIN ROSLAN</p>
+<p>Matric Number:2017287814</p>
+<p>Phone Number:0139116197</p>
+<p>Email: hafis@gmail.com</p>
+<p>Instagram: hafisuddin</p>
+<p>Facebook: hafisuddin</p>
+<p></p>
+<button onclick='print_current_class()'>Print </button>
+
+
+	<p><script>  
+<!--  
+document.write("Please print for your own use");  
+//-->  
+</script>  </p>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+     </center> 
+
+ 
+
+<div class="footer">
+  <h2>copyright</h2>
+</div>
+
+</body>
+</html>
